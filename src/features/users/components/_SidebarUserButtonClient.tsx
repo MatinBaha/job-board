@@ -22,9 +22,12 @@ import {
 import Link from 'next/link';
 
 type User = {
+  id: string;
   name: string;
   imageUrl: string;
   email: string;
+  createdAt: Date;
+  updatedAt: Date;
 };
 
 export const SidebarUserButtonClient = ({ user }: { user: User }) => {
